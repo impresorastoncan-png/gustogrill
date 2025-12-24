@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Playfair+Display:wght@700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply bg-dark-charcoal text-gray-200 font-sans;
+}
+
+.glassmorphism-card {
+    @apply bg-black/30 backdrop-blur-xl border border-white/10;
+}
+
+.premium-input {
+    @apply w-full bg-transparent border-b-2 border-gray-500 focus:border-brand-red outline-none transition-colors duration-300 py-2;
+}
+
+.step-button {
+    @apply w-16 h-16 rounded-full border-2 border-gray-600 flex items-center justify-center text-xl font-bold transition-all duration-300;
+}
+
+.step-button.active {
+    @apply bg-brand-red border-brand-red text-white scale-110;
+}
+
+.step-button:not(.active):hover {
+    @apply border-brand-red;
+}
